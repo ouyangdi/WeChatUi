@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeChatUI</string>
+
+    <string name="chats">会话</string>
+    <string name="contacts">通讯录</string>
+    <string name="discover">发现</string>
+    <string name="me">我</string>
+</resources>

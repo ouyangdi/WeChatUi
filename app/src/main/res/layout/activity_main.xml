@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.demo.candy.wechatui.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/tab_bg_line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/tab_bg">
+
+        <LinearLayout
+            android:id="@+id/chat_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.demo.candy.wechatui.view.GradientIconView
+                android:id="@+id/chat_icon"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                app:top_icon="@drawable/chats_green"
+                app:bottom_icon="@drawable/chats">
+            </com.demo.candy.wechatui.view.GradientIconView>
+
+            <com.demo.candy.wechatui.view.GradientTextView
+                android:id="@+id/chat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="@string/chats"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green"
+                app:bottom_text_color="@color/tab_text_gray">
+            </com.demo.candy.wechatui.view.GradientTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contacts_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <com.demo.candy.wechatui.view.GradientIconView
+                android:id="@+id/contacts_icon"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                app:top_icon="@drawable/contacts_green"
+                app:bottom_icon="@drawable/contacts">
+            </com.demo.candy.wechatui.view.GradientIconView>
+
+            <com.demo.candy.wechatui.view.GradientTextView
+                android:id="@+id/contacts_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="@string/contacts"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green"
+                app:bottom_text_color="@color/tab_text_gray">
+            </com.demo.candy.wechatui.view.GradientTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/discover_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.demo.candy.wechatui.view.GradientIconView
+                android:id="@+id/discover_icon"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                app:top_icon="@drawable/discover_green"
+                app:bottom_icon="@drawable/discover">
+            </com.demo.candy.wechatui.view.GradientIconView>
+
+            <com.demo.candy.wechatui.view.GradientTextView
+                android:id="@+id/discover_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="@string/discover"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green"
+                app:bottom_text_color="@color/tab_text_gray">
+            </com.demo.candy.wechatui.view.GradientTextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.demo.candy.wechatui.view.GradientIconView
+                android:id="@+id/about_icon"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                app:top_icon="@drawable/about_me_green"
+                app:bottom_icon="@drawable/about_me">
+            </com.demo.candy.wechatui.view.GradientIconView>
+
+            <com.demo.candy.wechatui.view.GradientTextView
+                android:id="@+id/about_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:text="@string/me"
+                app:text_size="12sp"
+                app:top_text_color="@color/tab_bg_green"
+                app:bottom_text_color="@color/tab_text_gray">
+            </com.demo.candy.wechatui.view.GradientTextView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
